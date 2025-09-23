@@ -9,7 +9,7 @@ pipeline {
           }
       stage ("deploy") {
         steps {
-          sh "aws s3 cp index.html s3://amith-demo-website-03"
+          sh "aws s3 cp * s3://amith-demo-website-03"
          }
        }
     }
