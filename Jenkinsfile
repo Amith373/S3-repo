@@ -9,7 +9,7 @@ pipeline {
           }
       stage ("deploy to s3") {
         steps {
-         sh 'aws s3 sync . s3://amith-demo-website-03/ --delete'
+         sh 'aws s3 cp * s3://amith-demo-website-03/'
          }
        }
     }
